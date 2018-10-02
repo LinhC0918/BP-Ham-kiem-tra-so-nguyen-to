@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Number</title>
+</head>
+<body>
+    <script>
+        function isPrimeNumber(int_number) {
+            var prime = true;
+            for (var i = 2; i < (int_number - 1); i++){
+                if (int_number % i === 0) {
+                    prime = false;
+                    break;
+                }else
+                    alert(int_number + ' is not Prime number');
+            }
+            if (prime === true){
+                alert(int_number + ' is Prime number');
+            }
+        }
+        isPrimeNumber(11);
+    </script>
+</body>
+</html>
